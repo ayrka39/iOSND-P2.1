@@ -225,12 +225,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         presentViewController(ActivityVC, animated: true, completion: nil)
     }
     
-    // edit Meme Image
-//    func initForEditing() {
-//        topTextField.text = "TOP"
-//        bottomTextField.text = "BOTTOM"
-//    }
-    
+    // edit Meme Image    
     func editMeme() {
         topTextField.hidden = false
         bottomTextField.hidden = false
