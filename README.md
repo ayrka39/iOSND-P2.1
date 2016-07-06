@@ -1,5 +1,4 @@
-## Udacity iOS Nanodegree project
+## Udacity iOS Nanodegree
 
 ### MemeMe 2.0: The Final Product
-## Udacity iOS Nanodegree
-### Meme 2.0 project
+
