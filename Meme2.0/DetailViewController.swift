@@ -28,19 +28,6 @@ class DetailViewController: UIViewController {
         tabBarController?.tabBar.hidden = true
     }
     
-    func editMeme() {
-        
-        var controller: ViewController
-        
-        controller = storyboard?.instantiateViewControllerWithIdentifier("ViewController") as! ViewController
-        controller.editMemedImage = true
-        controller.topText = meme.topTextField
-        controller.bottomText = meme.bottomTextField
-        controller.image = meme.originalImage
-        
-        presentViewController(controller, animated: true, completion: nil)
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -59,4 +46,16 @@ class DetailViewController: UIViewController {
         tabBarController?.tabBar.hidden = false
     }
     
+    func editMeme() {
+        
+        var controller: MemeViewController
+        
+        controller = storyboard?.instantiateViewControllerWithIdentifier("MemeViewController") as! MemeViewController
+        controller.editMemedImage = true
+        controller.topText = meme.topTextField
+        controller.bottomText = meme.bottomTextField
+        controller.image = meme.originalImage
+        
+        presentViewController(controller, animated: true, completion: nil)
+    }
 }
